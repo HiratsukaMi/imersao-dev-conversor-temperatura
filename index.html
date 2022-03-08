@@ -1,0 +1,38 @@
+
+<html>
+    <head>
+        <title> Imersão Dev Alura - Aula 01</title>
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="page-title">
+                Conversor de temperatura
+            </h1>
+            <!--<p class="page-subtitle">
+                Descubra os valores em dolar U$
+            </p>-->
+            <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt=""><br><br>
+            <label for="moeda">Insira o valor</label><br>
+            <input type="number" id="valor" size="2" /><br>
+            <table class="botoes" align="center">
+                <tr>
+                    <td><button class="botaoFahrenheitParaCelsius" type="submit" onclick="ConverterFahrenheitParaCelsius()">Converter Fahrenheit para Celsius</button></td>
+                    <td><button class="botaoKelvinParaCelsius" type="submit" onclick="ConverterKelvinParaCelsius()">Converter Kelvin para Celsius</button></td>
+                    <td><button class="botaoKelvinParaFahrenheit" type="submit" onclick="ConverterKelvinParaFahrenheit()">Converter Kelvin para Fahrenheit</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botaoCelsiusParaFahrenheit" type="submit" onclick="ConverterCelsiusParaFahrenheit()">Converter Celsius para Fahrenheit</button></td>
+                    <td><button class="botaoCelsiusParaKelvin" type="submit" onclick="ConverterCelsiusParaKelvin()">Converter Celsius para Kelvin</button></td>
+                    <td><button class="botaoFahrenheitParaKelvin" type="submit" onclick="ConverterFahrenheitParaKelvin()">Converter Fahrenheit para Kelvin</button></td>
+                </tr>
+            </table>
+            <h2 id="valorConvertido"></h2>
+        </div>
+        <a href="https://alura.com.br/" target="_blank">
+            <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+        </a>
+    </body>
+    <script src="js/script.js"></script>
+</html>
